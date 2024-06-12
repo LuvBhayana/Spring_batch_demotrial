@@ -1,7 +1,8 @@
 package com.batch.example.model;
 
+
 public class Product {
-   private int productId;
+   private String productId;
     private String title;
 
     private String description;
@@ -9,7 +10,7 @@ public class Product {
     private String discount;
     private String discountedPrice;
 
-    public Product(int productId, String title, String description, String price, String discount) {
+    public Product(String productId, String title, String description, String price, String discount) {
         this.productId = productId;
         this.title = title;
         this.description = description;
@@ -20,11 +21,11 @@ public class Product {
     public Product(){
     }
 
-    public int getProductId() {
+    public String getProductId() {
         return productId;
     }
 
-    public void setProductId(int productId) {
+    public void setProductId(String productId) {
         this.productId = productId;
     }
 

@@ -2,13 +2,14 @@ package com.batch.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
+import javax.swing.*;
+
+@SpringBootApplication
 public class BootBatchExampleApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootBatchExampleApplication.class, args);
+		System.exit(SpringApplication.exit(SpringApplication.run(BootBatchExampleApplication.class, args)));
 	}
 
 }
